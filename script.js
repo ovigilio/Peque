@@ -1,8 +1,8 @@
 // Contraseña predefinida
-const CONTRASENA = "160915"; // Cambia esto por la contraseña que desees
+const CONTRASENA = "160914"; // Cambia esto por la contraseña que desees
 
 // Variable para almacenar la contraseña ingresada
-let contrasenaIngresada = "160915";
+let contrasenaIngresada = "160914";
 
 // Función para agregar números al display
 function agregarNumero(numero) {
@@ -50,7 +50,7 @@ function mostrarContador() {
 
 // Función para actualizar el contador
 function actualizarContador() {
-    const fechaInicio = new Date('2015-09-16'); // Cambia esta fecha por la que desees
+    const fechaInicio = new Date('2014-09-16'); // Cambia esta fecha por la que desees
     const ahora = new Date();
 
     let anos = ahora.getFullYear() - fechaInicio.getFullYear();
