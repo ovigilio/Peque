@@ -9,6 +9,36 @@
 </head>
 
 <body>
+    <!-- Audio -->
+    <audio autoplay loop>
+        <source src="tu-cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- Lluvia de corazones -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart-rain');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            heart.innerHTML = '❤️';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 300);
+    </script>
+    
+        <div class="container">
+            <h1>Feliz San Valentín, mi amor ❤️</h1>
+        </div>
+
+
+
     <!-- Contenedor de la caja fuerte -->
     <div class="container">
         <div class="caja-fuerte">
