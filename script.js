@@ -2,7 +2,7 @@
 const CONTRASENA = "160914"; // Cambia esto por la contraseña que desees
 
 // Variable para almacenar la contraseña ingresada
-let contrasenaIngresada = "160914";
+let contrasenaIngresada = "";
 
 // Función para agregar números al display
 function agregarNumero(numero) {
