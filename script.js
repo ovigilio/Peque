@@ -118,4 +118,3 @@ function mostrarCarta() {
     // Mostrar la carta
     seccionCarta.style.display = 'block';
 }
-
