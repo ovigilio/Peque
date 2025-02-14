@@ -9,41 +9,11 @@
 </head>
 
 <body>
-
-    <!-- Audio -->
-    <audio autoplay loop>
-        <source src="tu-cancion.mp3" type="audio/mpeg">
-        Tu navegador no soporta la reproducción de audio.
-    </audio>
-
-    <!-- Lluvia de corazones -->
-    <script>
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.classList.add('heart-rain');
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
-            heart.innerHTML = '❤️';
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-                heart.remove();
-            }, 5000);
-        }
-
-        setInterval(createHeart, 300);
-    </script>
-
-    <header>
-        <div class="container">
-            <h1>Feliz San Valentín, mi amor ❤️</h1>
-        </div>
-    
-
+    <!-- Contenedor de la caja fuerte -->
     <div class="container">
         <div class="caja-fuerte">
             <div class="imagen">
-                <img src="assets/img/FONDO.JPG" alt="">
+                <img src="https://i.pinimg.com/236x/cb/16/3e/cb163e5cfeb72319a865d791c90fd715.jpg" alt="">
             </div>
             <div class="teclado">
                 <div class="display" id="display">
@@ -81,13 +51,12 @@
         </div>
     </div>
 
-</header>
-
     <!-- Sección del contador (oculta inicialmente) -->
     <div id="seccion-contador" class="seccion-contador">
         <!-- Cabecera -->
         <div class="cabecera">
-            <img src="assets/img/foto1.jpg" alt="" class="imagen-cabecera">
+            <img src="https://cdn0.matrimonios.cl/article-vendor/8733/3_2/1280/jpg/img-4828ph_8_188733-171393458745480.webp"
+                alt="" class="imagen-cabecera">
             <div class="titulo-cabecera">
                 <h1>Nuestro Tiempo Juntos</h1>
             </div>
@@ -143,13 +112,14 @@
             <h1>Nuestras Fotos </h1>
         </div>
 
+        <!-- Contenedor de las fotos -->
         <div class="fotos">
-            <img src="assets/img/foto1.jpg" alt="Foto 1">
-            <img src="assets/img/foto2.jpg" alt="Foto 2">
-            <img src="assets/img/foto3.jpg" alt="Foto 3">
-            <img src="assets/img/foto4.jpg" alt="Foto 4">
-            <img src="assets/img/foto5.jpg" alt="Foto 5">
-            <img src="assets/img/foto6.jpg" alt="Foto 6">
+            <img src="https://www.lovepanky.com/wp-content/uploads/2016/12/hopeless-romantic.jpg" alt="Foto 1">
+            <img src="https://www.lovepanky.com/wp-content/uploads/2016/12/hopeless-romantic.jpg" alt="Foto 2">
+            <img src="https://www.lovepanky.com/wp-content/uploads/2016/12/hopeless-romantic.jpg" alt="Foto 3">
+            <img src="https://www.lovepanky.com/wp-content/uploads/2016/12/hopeless-romantic.jpg" alt="Foto 4">
+            <img src="https://www.lovepanky.com/wp-content/uploads/2016/12/hopeless-romantic.jpg" alt="Foto 5">
+            <img src="https://www.lovepanky.com/wp-content/uploads/2016/12/hopeless-romantic.jpg" alt="Foto 6">
         </div>
 
         <!-- Botón para ir a la carta -->
@@ -183,11 +153,11 @@
         <!-- Contenido de la carta -->
         <div class="contenido-carta">
             <p>
-                Mi [Peque],<br><br>
+                Querida [Nombre],<br><br>
                 Este es un mensaje especial para ti. Gracias por ser parte de mi vida y por todos los momentos que hemos
                 compartido juntos. Eres muy importante para mí y quiero que sepas que siempre estaré a tu lado.<br><br>
                 Con todo mi cariño,<br>
-                [Oliver (Tu puerco)]
+                [Tu Nombre]
             </p>
         </div>
 
