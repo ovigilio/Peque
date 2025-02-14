@@ -10,11 +10,17 @@
 
 <body>
 
-    <!-- Audio -->
-    <audio autoplay loop>
-        <source src="tu-cancion.mp3" type="audio/mpeg">
-        Tu navegador no soporta la reproducción de audio.
-    </audio>
+    <audio id="miAudio" src="assets/audio/Reik.mp3" autoplay loop muted></audio>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let audio = document.getElementById("miAudio");
+    audio.muted = false; // Activamos el sonido después de cargar la página
+    audio.play().catch(error => console.log("El navegador bloqueó el autoplay:", error));
+  });
+</script>
+<button onclick="document.getElementById('miAudio').play()">Reproducir Música</button>
+
+
 
     <!-- Lluvia de corazones -->
     <script>
