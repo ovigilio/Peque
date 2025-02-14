@@ -6,17 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi peque</title>
     <link rel="stylesheet" href="styles.css">
-</head>
 
-<audio id="miAudio" src="assets/audio/Reik.mp3" autoplay loop muted></audio>
+    <audio id="miAudio" src="assets/audio/Reik.mp3"></audio>
+
+<button id="botonAudio" class="boton-audio">
+    <span id="iconoBoton">▶️</span> Reproducir
+</button>
+
+<style>
+  .boton-audio {
+      background: linear-gradient(45deg, #ff758c, #ff7eb3);
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .boton-audio:hover {
+      background: linear-gradient(45deg, #ff5c8a, #ff72a1);
+      transform: scale(1.05);
+  }
+</style>
+
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    let audio = document.getElementById("miAudio");
-    audio.muted = false; // Activamos el sonido después de cargar la página
-    audio.play().catch(error => console.log("El navegador bloqueó el autoplay:", error));
+  document.getElementById("botonAudio").addEventListener("click", function () {
+      let audio = document.getElementById("miAudio");
+      let icono = document.getElementById("iconoBoton");
+
+      if (audio.paused) {
+          audio.play();
+          icono.textContent = "⏸️"; // Cambia el icono a pausa
+          this.textContent = " Pausar"; // Cambia el texto del botón
+          this.prepend(icono); // Mantiene el ícono
+      } else {
+          audio.pause();
+          icono.textContent = "▶️"; // Cambia el icono a play
+          this.textContent = " Reproducir";
+          this.prepend(icono);
+      }
   });
 </script>
-<button onclick="document.getElementById('miAudio').play()">Reproducir Música</button>
+
+</head>
+
+
 
 <body>
 
