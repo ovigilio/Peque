@@ -2,12 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Delius&family=Delius+Unicase:wght@400;700&family=Knewave&display=swap");
 
-body {
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  background-color: #f9e3e3;
-}
+
 .heart-rain {
   position: absolute;
   top: -50px;
@@ -24,12 +19,27 @@ body {
 body {
     cursor: url(assets/icon/cursor-body.cur), auto;
   font-family: "Delius", cursive;
-  background-color: #ffffff;
+  background-color: #f9e3e3;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.heart-rain {
+  position: absolute;
+  top: -50px;
+  animation: fall linear infinite;
+  font-size: 24px;
+  color: #d6336c;
+}
+@keyframes fall {
+  to {
+      transform: translateY(100vh);
+  }
 }
 
 /* Contenedor principal */
